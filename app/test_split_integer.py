@@ -14,5 +14,9 @@ from app.split_integer import split_integer
         (3, 5, [0, 0, 1, 1, 1])
     ]
 )
-def test_direct_examples_from_description(value, number_of_parts, parts) -> None:
+def test_direct_examples_from_description(
+        value: int,
+        number_of_parts: int,
+        parts: list
+) -> None:
     assert split_integer(value=value, number_of_parts=number_of_parts) == parts
